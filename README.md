@@ -28,7 +28,7 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 
 ## Resources
 
-Image by Ricardo Frantz
-Poem is "The Pilgrim" by Robert Malise
+[Image by Ricardo Frantz](https://unsplash.com/photos/u8-HjIOk8Vs)
+[Poem "The Pilgrim" by Robert Malise](https://www.public-domain-poetry.com/robert-malise-bowyer-nichols/pilgrim-38328)
 Bowyer Nichols
 <small>The starter was inspired by [11ty Sass Skeleton](https://github.com/5t3ph/11ty-sass-skeleton) by [@5t3ph](https://twitter.com/5t3ph)</small>

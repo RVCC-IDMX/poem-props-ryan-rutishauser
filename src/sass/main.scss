@@ -2,6 +2,13 @@
 @use "./base/reset";
 @use "./pages/home";
 
+@font-face {
+  font-family: 'Bitter';
+  font-weight: 400;
+  src: url('base/bitter-variablefont_wght-webfont.woff2') format('woff2'),
+  url('base/bitter-variablefont_wght-webfont.woff') format('woff');
+}
+
 :root {
   --step--2: clamp(0.52rem, calc(0.29rem + 1.15vw), 1.44rem);
   --step--1: clamp(0.63rem, calc(0.33rem + 1.47vw), 1.8rem);
@@ -11,14 +18,53 @@
   --step-3: clamp(1.3rem, calc(0.52rem + 3.87vw), 4.39rem);
   --step-4: clamp(1.56rem, calc(0.57rem + 4.92vw), 5.49rem);
   --step-5: clamp(1.87rem, calc(0.62rem + 6.25vw), 6.87rem);
+  }
+
+body{
+  background-color: var(--green-12);
+  font: Bitter;
+}
+
+.poem {
+  margin: 15vw;
+  padding: 5vw;
+  background-color: rgb(225, 222, 213);
+  color: black;
+}
+
+@media (prefers-color-scheme: dark){
+  .poem{
+    background-color: black;
+    color: rgb(225, 222, 213);
+  }
+}
+
+p{
+  font-size: var(--step-2);
 }
 
 h1{
-  font-size: --step-5;
+  font-size: var(--step-5);
+  color: var(--green-12);
+  text-shadow: 4px 4px 15px var(--gray-10);
+}
+
+h2{
+  font-size: var(--step-2);
+  color: var(--green-12);
+  text-shadow: 4px 4px 15px var(--gray-10);
+  margin-left: 13vw;
 }
 
 .title{
   background-image: url("../images/Pilgrim_Image.jpg");
   height: 100vh;
   background-size: 100% 100%;
+  text-align: center;
+  text-shadow: var(--shadow-6);
+}
+
+footer{
+  color: rgb(225, 222, 213);
+  text-align: center;
 }
